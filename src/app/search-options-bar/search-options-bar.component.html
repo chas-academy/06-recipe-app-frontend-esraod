@@ -1,0 +1,48 @@
+<div class="rec-list">
+
+
+    <div id="flex-two">
+      <ul id="rc-list" style="width: 99vw;">
+        <li>Diary free</li>
+        <li>Gluten free</li>
+        <li>Vegan</li>
+        <li>Vegetarian</li>
+        
+        <span style="font-size: 1.4em;">|</span>
+  
+        <li>Starters</li>
+        <li>Main</li>
+        <li>Sides</li>
+        <li>Desserts</li>
+  
+        <span style="font-size:1.4em;">|</span>
+  
+        <li>Pasta</li>
+        <li>Chicken</li>
+        <li>Beef</li>
+        <li>Pork</li>
+        <li>Fast food</li>
+        <li>Soup</li>
+      </ul>
+    </div>
+   
+    <!-- <div id="flex-three">
+      <button id="search"><input type="text" placeholder="search.."><fa-icon [icon]="search"></fa-icon></button>
+    </div>
+     -->
+  </div>
+  
+  <div class="rec-list" style="background: #ececec; padding: 10px 0 10px 0; margin-top: 0; box-shadow: 0px 2px 4px gray; z-index: 4;">
+
+    <form #searchForm="ngForm" (ngSubmit)="searchRecipes(searchForm)" onsubmit="event.preventDefault();">
+      <input ngModel name="searchValue" placeholder="Search..." style="width:95vw; margin: auto; background: white; "type="text">
+    </form>
+      
+     
+      <!-- <div id="flex-three">
+        <button id="search"><input type="text" placeholder="search.."><fa-icon [icon]="search"></fa-icon></button>
+      </div>
+       -->
+  </div>
+    
+  

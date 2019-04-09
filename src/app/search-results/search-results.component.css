@@ -1,0 +1,146 @@
+.s-result{
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: fit-content; */
+    max-height: 500px;
+    overflow-y: scroll;
+    justify-content: space-evenly;
+}
+
+.result{
+width: 23vw;
+height:auto;
+display: flex;
+flex-direction: column;
+overflow-y: scroll;
+
+}
+
+.result-img{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/08/Slow-Cooked-Spaghetti-Bolognese-Recipe.jpg");
+ background-size: cover;
+ background-position: center;
+ border-radius: 150px;
+ border:none;
+ margin: 15px auto auto auto;
+}
+.result-img-2{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/06/Summer-BBQ-Ideas-That-doesnt-include-burgers-or-sausages-1.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 150px;
+   border:none;
+   margin: 15px auto auto auto;
+}
+
+h4{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #aaaaaa;
+}
+
+
+.result-img-3{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/11/creamy-cauliflower-soup-recipe.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 150px;
+   border:none;
+   margin: 15px auto auto auto;
+}
+
+
+.result-img-4{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/08/Oriental-Chicken-and-Cashew-Nut-Stir-Fry-Recipe-1.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 150px;
+   border:none;
+   margin: 15px auto auto auto;
+}
+
+.result-img-5{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2013/09/Low-fat-Creamy-Pepper-Prawn-Tagliatelle-Recipe-3.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 150px;
+   border:none;
+   margin: 15px auto auto auto;
+}
+
+.result-img-6{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/06/hearty-slow-cooked-chunky-chilli-recipe-2.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 150px;
+   border:none;
+   margin: 15px auto auto auto;
+}
+
+.result-img-7{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2013/10/Sweet-Butternut-Squash-Chilli-Recipe-2.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 150px;
+   border:none;
+   margin: 15px auto auto auto;
+}
+
+.result-img-8{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/02/Super-Food-Vegetable-Pasta-Recipe-5.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 150px;
+   border:none;
+   margin: 15px auto auto auto;
+}
+
+.result-img-9{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/09/sticky-honey-soy-prawn-stir-fry-3.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 150px;
+   border:none;
+   margin: 15px auto auto auto;
+}
+
+.result-img-10{
+    width: 17vw;
+    height: 17vw;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/08/Quick-and-Tasty-Chicken-Curry-Recipe-2.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 150px;
+   border:none;
+   margin: 15px auto auto auto;
+}
+
+

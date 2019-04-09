@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+html {
+    width: 100wv; 
+ 
+}
+
+* {
+    font-family: "Comfortaa", cursive;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    margin: 180px 0px 2px 0px;
+    color: #c1c1c1;
+    
+}
+main {
+    padding: 0px 40px;
+}

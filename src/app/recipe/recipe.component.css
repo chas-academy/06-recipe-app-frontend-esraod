@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-html {
-    width: 100wv; 
- 
-}
-
-* {
-    font-family: "Comfortaa", cursive;
-    margin: 0;
-    padding: 0;
-}
 h1 {
     /* padding-top: 60px; */
     padding-top:120px;
@@ -17,50 +6,11 @@ h1 {
     padding-bottom: 20px;
 }
 
-.icone {
-    margin-top: 40px;
-   font-size: 80px;
-}
-
-li fa-icon {
-    background: #a2a2a2a1;
-    padding: 5px 8px;
-    border-radius: 150px;
-    width: 40px;
-    color: white;
-}
 
 
-/* .home fa-icon:hover {
-    color: yellow;
-}
-.book fa-icon:hover{
-    color: lightseagreen;
-} 
-.list fa-icon:hover {
-    color: green;
-}
 
-.user fa-icon:hover {
-    color: rgb(255, 140, 0);
-} */
-.heart fa-icon:hover {
-    color: rgb(255, 0, 76);
-}
 
-li fa-icon:hover {
-    background: #454545;
-  
-}
 
-fa-icon:hover {
-    color: #4b4b4b;
-   
-}
-
-.icone span{
-    margin: 30px;
-}
 
 p{
     margin: auto;
@@ -99,7 +49,7 @@ ul {
 }
 
 main {
-    padding: 0px;
+    padding: 0px 40px;
 }
 
 .nav li{
@@ -162,14 +112,7 @@ input {
     margin: 0px 20px 0px 110px;
 }
 
-footer{
-    position: absolute;
-    text-align: center;
-    width: 100vw;
-    margin: 180px 0px 2px 0px;
-    color: #c1c1c1;
-    
-}
+
 
 #sign {
     font-weight: 100;
@@ -181,6 +124,78 @@ footer{
     color:gray;
 }
 
+.recipe{
+    /* margin-top: 60px; */
+    padding-top: 150px;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.recipe ul {
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.recipe div {
+    width: 450px;
+    overflow: wrap;
+    padding-left: 40px;
+}
+.recipe ul li {
+    line-height: 30px;
+    padding: 10px;
+    border-bottom: 2px dotted white;
+    
+}
+.recipe ol li {
+    line-height: 30px;
+    padding: 10px;
+  
+    
+}
+
+.recipe ol {
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  
+    padding: 10px;
+    width: 280px;
+
+}
+
+.recipe h2 {
+    text-align:left;
+    padding-left: 10px;
+}
+
+#ing {
+        background-color: #e2e2e2;
+        border-radius:10px;
+}
+
+.recipe .img{
+    width: 300px;
+    height: 300px;
+   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/08/Slow-Cooked-Spaghetti-Bolognese-Recipe.jpg");
+ background-size: cover;
+ background-position: center;
+ border-radius: 150px;
+ border:none;
+ margin: 0px 0px 25px 0px;
+}
+
+#foodname{
+    font-size:40px;
+    padding-left: 10px;
+}
 
 #bar {
     height: 300px;

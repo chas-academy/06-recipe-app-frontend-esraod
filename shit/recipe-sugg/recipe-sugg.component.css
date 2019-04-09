@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#top {
+    padding-top:100px;
+    width: 100vw;
+}
+
+
+ul {
+
+    align-self: center;
+    display: flex;
+ 
+    width: 100vw;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.filter {
+    /* background: #eeeeee; */
+    margin-bottom: 60px;
+    /* justify-content: center; */
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    width:100vw;
+    background: #ffffff63;
+    
+}
+
+li {
+    background: rgb(160, 160, 160);
+    padding: 7px;
+    border-radius: 100px;
+    width: 100px;
+    text-align: center;
+    color:white;
+}
