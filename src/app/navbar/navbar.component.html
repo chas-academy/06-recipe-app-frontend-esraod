@@ -1,24 +1,41 @@
 <div class="nav">
 
-  <div id="flex-one">
-    <ul id="sign">
-      <li routerLink="#">Sign Up</li>
-      <li routerLink="#">Sign in</li>
+  <div class="nav-1">
+    <ul class="sign">
+      <li routerLink="#">
+        Sign Up
+      </li>
+      <li routerLink="#">
+        Sign in
+      </li>
     </ul>
   </div>
 
-  <div id="flex-two">
-    <ul id="navigation">
-      <li class="home" routerLink="#" ><fa-icon [icon]="home"></fa-icon></li>
-      <li class="book" routerLink="#" ><fa-icon [icon]="book"></fa-icon></li>
-      <li class="user" routerLink="#"><fa-icon [icon]="user"></fa-icon></li>
-      <li class="list" routerLink="#"><fa-icon [icon]="list"></fa-icon></li>
-      <li class="heart" routerLink="#"><fa-icon [icon]="heart"></fa-icon></li>
+  <div class="nav-2">
+    <ul class="navigation">
+      <!-- <li routerLink="#">
+        <fa-icon [icon]="home"></fa-icon>
+      </li> -->
+      <!-- <li routerLink="#">
+        <fa-icon [icon]="book"></fa-icon>
+      </li> -->
+      <li  routerLink="#">
+        <fa-icon [icon]="user"></fa-icon>
+      </li>
+      <li  routerLink="#">
+        <fa-icon [icon]="list"></fa-icon>
+      </li>
+      <li routerLink="#">
+        <fa-icon [icon]="heart"></fa-icon>
+      </li>
     </ul>
   </div>
 
-  <div id="flex-three">
-    <button id="search"><input type="text" placeholder="search.."><fa-icon [icon]="search"></fa-icon></button>
+  <div class="nav-3" style="width: 33vw;">
+    <button class="search">
+      <!-- <input type="text" placeholder="search.."> -->
+      <fa-icon [icon]="search"></fa-icon>
+    </button>
   </div>
   
 </div>

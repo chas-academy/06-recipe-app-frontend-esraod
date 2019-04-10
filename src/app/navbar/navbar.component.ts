@@ -7,6 +7,7 @@ import {faBook, faHeart, faUser, faHome, faList, faSearch } from '@fortawesome/f
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
+
 export class NavbarComponent implements OnInit {
   
   home = faHome;
