@@ -1,11 +1,11 @@
-<div class="s-result">
+<div *ngIf="recipes" class="s-result">
 
-    <a href="/#">
+    <a *ngFor="let recipe of recipes;" routerLink="/recipe/{{recipe.id}}">
       <div class="result">
         <!-- <div class="result-img" style="background-image: url('{{recipe.smallImageUrls[0]}}') !important;"></div> -->
-        <img class="result-img" src="">
-        <h4>Recipe Name</h4>
+        <img class="result-img" src="{{recipe.smallImageUrls[0]}}">
+        <h4>{{recipe.recipeName}}</h4>
       </div>
     </a>
-    
+
 </div>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { RecipeService } from '../services/recipe.service';
+import {faHeart} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-recipe-detail',
@@ -7,9 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeDetailComponent implements OnInit {
 
-  constructor() { }
+  recipe: any
+
+  heart = faHeart;
+ 
+  constructor(
+    private route: ActivatedRoute,
+    private recipeService: RecipeService,
+  ) { }
 
   ngOnInit() {
+    this.detailRecipe()
+  }
+
+  detailRecipe() {
+    let id = this.route.snapshot.paramMap.get('id')
+    console.log(id)
+
+    this.recipeService.getRecipe(id).subscribe(data => {
+      this.recipe = data
+      console.log(this.recipe)
+    })
+
   }
 
 }

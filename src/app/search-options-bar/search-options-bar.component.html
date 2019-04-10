@@ -1,5 +1,5 @@
 <div class="search-bar-bar">
-  
+
   <div class="rec-list">
 
     <div id="flex-two">
@@ -16,16 +16,23 @@
         <li>Sides</li>
         <li>Desserts</li>
   
-        <!-- 
+        
         <span style="font-size:1.4em;">|</span>
   
-        <li>Pasta</li>
-        <li>Chicken</li>
-        <li>Beef</li>
-        <li>Pork</li>
-        <li>Fast food</li>
-        <li>Soup</li> 
+        <!-- <a routerLink="/recipes/pasta">Pasta</a>
+        <a routerLink="/recipes/chicken">Chicken</a>
+        <a routerLink="/recipes/beef">Beef</a>
+        <a routerLink="/recipes/pork">Pork</a>
+        <a routerLink="/recipes/fast-food">Fast Food</a>
+        <a routerLink="/recipes/soup">Soup</a>
         -->
+        <li><a routerLink="/recipes/pasta">Pasta</a></li>
+        <li><a routerLink="/recipes/chicken">Chicken</a></li>
+        <li><a routerLink="/recipes/beef">Beef</a></li>
+        <li><a routerLink="/recipes/pork">Pork</a></li>
+        <li><a routerLink="/recipes/fast-food">Fast Food</a></li>
+        <li><a routerLink="/recipes/soup">Soup</a></li> 
+       
 
       </ul>
     </div>
@@ -39,13 +46,14 @@
   
   <div class="rec-list" style="background: #ececec; padding: 10px 0 10px 0; margin-top: 0; box-shadow: 0px 2px 4px gray; z-index: 4;">
 
-    <form #searchForm="ngForm" (ngSubmit)="searchRecipes(searchForm)" onsubmit="event.preventDefault();">
+    <form #searchForm="ngForm" (ngSubmit)="sendToUrl(searchForm)" onsubmit="event.preventDefault();">
       <input ngModel name="searchValue" placeholder="Search..." style="width:95vw; margin: auto; background: white; "type="text">
     </form>
-    <!-- <div id="flex-three">
+    <!-- 
+    <div id="flex-three">
       <button id="search"><input type="text" placeholder="search.."><fa-icon [icon]="search"></fa-icon></button>
     </div>
-      -->
+    -->
   </div>
 
 </div>

@@ -1,5 +1,6 @@
+import { RecipeService } from './../services/recipe.service';
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-options-bar',
@@ -8,13 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchOptionsBarComponent implements OnInit {
 
-  constructor() { }
+  search: any;
+
+  constructor(
+    private recipeService: RecipeService,
+    private router: Router,
+  ) { }
 
   ngOnInit() {
   }
 
-  searchRecipes(value) {
-    console.log(value.form.value.searchValue);
+  sendToUrl(value){
+    this.router.navigateByUrl(`/recipes/${value.form.value.searchValue}`)
   }
 
 }
