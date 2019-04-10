@@ -1,3 +1,161 @@
+
+.icone {
+    margin-top: 40px;
+   font-size: 80px;
+}
+
+li fa-icon {
+    background: #a2a2a2a1;
+    padding: 5px 8px;
+    border-radius: 150px;
+    width: 40px;
+    color: white;
+}
+
+/* .home fa-icon:hover {
+    color: yellow;
+}
+.book fa-icon:hover{
+    color: lightseagreen;
+} 
+.list fa-icon:hover {
+    color: green;
+}
+
+.user fa-icon:hover {
+    color: rgb(255, 140, 0);
+} */
+.heart fa-icon:hover {
+    color: rgb(255, 0, 76);
+}
+
+li fa-icon:hover {
+    background: #454545;
+  
+}
+
+fa-icon:hover {
+    color: #4b4b4b;
+   
+}
+
+.icone span{
+    margin: 30px;
+}
+
+p{
+    margin: auto;
+    width: 350px;
+    padding: 40px 0px;
+    line-height: 28px;
+}
+
+p span{
+    font-style: italic;
+    font-weight: bold;
+}
+
+ul {
+
+    align-self: center;
+    display: flex;
+ 
+    width: 20vw;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.rec-list {
+    /* background: #eeeeee; */
+    /* margin-bottom: 60px; */
+    /* justify-content: center; */
+    justify-content: space-between;
+    display: flex;
+    /* position: fixed; */
+    width:100vw;
+    background: #ffffff63;
+    margin-top: 50px;
+    
+}
+
+
+.rec-list li{
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    font-size: 20px;
+}
+
+/* .rec-list li:hover{
+    font-weight: bold;
+    letter-spacing:2em;
+    text-transform: uppercase;
+} */
+
+#rc-list{
+    display: flex;
+    flex-flow: row;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: #ececec;
+}
+
+#rc-list li{
+  
+  padding: 5px 10px 5px 10px;
+  border-radius: 60px;
+
+  font-size: 15px;
+}
+
+input {
+    border-radius: 100px;
+    /* border: 2px solid black; */
+    border:none;
+    background: #e2e2e2;
+    text-indent: 10px;
+    height: 30px;
+    /* margin-top: 3px; */
+    margin-right:2px;
+    width: 160px;
+}
+
+#search {
+    background: none;
+    border: none;
+    font-size: 15px;
+    /* padding-left: 3px; */
+    height: 43px;
+    color: #c1c1c1;
+    margin: 0px 20px 0px 110px;
+}
+
+
+#sign {
+    font-weight: 100;
+    color:  #e2e2e2;
+    letter-spacing: 1px;
+}
+
+.rec-list li:hover  {
+    color:gray;
+}
+
+
+#ing {
+    background-color: #e2e2e2;
+    border-radius:10px;
+}
+
+
+
+#bar {
+    height: 300px;
+}
+
 .s-result{
     width: 95vw;
     margin: auto;
@@ -5,8 +163,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     /* height: fit-content; */
-    max-height: 500px;
+    /* max-height: 500px; */
     overflow-y: scroll;
+    height: 90vh;
     justify-content: space-evenly;
 }
 
@@ -29,16 +188,6 @@ overflow-y: scroll;
  border:none;
  margin: 15px auto auto auto;
 }
-.result-img-2{
-    width: 17vw;
-    height: 17vw;
-   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/06/Summer-BBQ-Ideas-That-doesnt-include-burgers-or-sausages-1.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 150px;
-   border:none;
-   margin: 15px auto auto auto;
-}
 
 h4{
     text-align: center;
@@ -51,96 +200,6 @@ a {
 }
 a:hover{
     color: #aaaaaa;
-}
-
-
-.result-img-3{
-    width: 17vw;
-    height: 17vw;
-   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/11/creamy-cauliflower-soup-recipe.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 150px;
-   border:none;
-   margin: 15px auto auto auto;
-}
-
-
-.result-img-4{
-    width: 17vw;
-    height: 17vw;
-   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/08/Oriental-Chicken-and-Cashew-Nut-Stir-Fry-Recipe-1.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 150px;
-   border:none;
-   margin: 15px auto auto auto;
-}
-
-.result-img-5{
-    width: 17vw;
-    height: 17vw;
-   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2013/09/Low-fat-Creamy-Pepper-Prawn-Tagliatelle-Recipe-3.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 150px;
-   border:none;
-   margin: 15px auto auto auto;
-}
-
-.result-img-6{
-    width: 17vw;
-    height: 17vw;
-   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/06/hearty-slow-cooked-chunky-chilli-recipe-2.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 150px;
-   border:none;
-   margin: 15px auto auto auto;
-}
-
-.result-img-7{
-    width: 17vw;
-    height: 17vw;
-   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2013/10/Sweet-Butternut-Squash-Chilli-Recipe-2.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 150px;
-   border:none;
-   margin: 15px auto auto auto;
-}
-
-.result-img-8{
-    width: 17vw;
-    height: 17vw;
-   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/02/Super-Food-Vegetable-Pasta-Recipe-5.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 150px;
-   border:none;
-   margin: 15px auto auto auto;
-}
-
-.result-img-9{
-    width: 17vw;
-    height: 17vw;
-   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/09/sticky-honey-soy-prawn-stir-fry-3.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 150px;
-   border:none;
-   margin: 15px auto auto auto;
-}
-
-.result-img-10{
-    width: 17vw;
-    height: 17vw;
-   background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2014/08/Quick-and-Tasty-Chicken-Curry-Recipe-2.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 150px;
-   border:none;
-   margin: 15px auto auto auto;
 }
 
 
