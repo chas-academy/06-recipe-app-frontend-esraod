@@ -1,5 +1,6 @@
-<div class="rec-list">
-
+<div class="search-bar-bar">
+  
+  <div class="rec-list">
 
     <div id="flex-two">
       <ul id="rc-list" style="width: 99vw;">
@@ -15,6 +16,7 @@
         <li>Sides</li>
         <li>Desserts</li>
   
+        <!-- 
         <span style="font-size:1.4em;">|</span>
   
         <li>Pasta</li>
@@ -22,11 +24,14 @@
         <li>Beef</li>
         <li>Pork</li>
         <li>Fast food</li>
-        <li>Soup</li>
+        <li>Soup</li> 
+        -->
+
       </ul>
     </div>
    
-    <!-- <div id="flex-three">
+    <!-- 
+    <div id="flex-three">
       <button id="search"><input type="text" placeholder="search.."><fa-icon [icon]="search"></fa-icon></button>
     </div>
      -->
@@ -37,12 +42,10 @@
     <form #searchForm="ngForm" (ngSubmit)="searchRecipes(searchForm)" onsubmit="event.preventDefault();">
       <input ngModel name="searchValue" placeholder="Search..." style="width:95vw; margin: auto; background: white; "type="text">
     </form>
-      
-     
-      <!-- <div id="flex-three">
-        <button id="search"><input type="text" placeholder="search.."><fa-icon [icon]="search"></fa-icon></button>
-      </div>
-       -->
+    <!-- <div id="flex-three">
+      <button id="search"><input type="text" placeholder="search.."><fa-icon [icon]="search"></fa-icon></button>
+    </div>
+      -->
   </div>
-    
-  
+
+</div>
