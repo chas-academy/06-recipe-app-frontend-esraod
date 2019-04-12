@@ -20,6 +20,7 @@ export class SearchResultsComponent implements OnInit {
     this.route.params.subscribe(routeParams =>{
       let val = this.route.snapshot.paramMap.get('value')
       console.log(val);
+
       this.recipeService.getRecipes(val).subscribe(data => {
         this.recipes = data
         console.log(this.recipes)
@@ -27,5 +28,7 @@ export class SearchResultsComponent implements OnInit {
       })
     })
   }
+
+  
 
 }
