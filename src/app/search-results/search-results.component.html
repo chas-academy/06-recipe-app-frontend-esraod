@@ -1,11 +1,13 @@
 <div *ngIf="recipes" class="s-result">
 
-    <a *ngFor="let recipe of recipes;" routerLink="/recipe/{{recipe.id}}">
-      <div class="result">
-        <!-- <div class="result-img" style="background-image: url('{{recipe.smallImageUrls[0]}}') !important;"></div> -->
+  <a *ngFor="let recipe of recipes;" routerLink="/recipe/{{recipe.id}}">
+    <div class="result">
+      <!-- <div class="result-img" style="background-image: url('{{recipe.smallImageUrls[0]}}') !important;"></div> -->
+      <div class="round-image">
         <img class="result-img" src="{{recipe.smallImageUrls[0]}}-s360">
-        <h4>{{recipe.recipeName}}</h4>
       </div>
-    </a>
+      <h4>{{recipe.recipeName}}</h4>
+    </div>
+  </a>
 
 </div>
