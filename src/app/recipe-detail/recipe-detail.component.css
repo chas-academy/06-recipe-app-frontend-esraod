@@ -28,20 +28,22 @@
 }
 
 .round-image{
-    width: 235px;
-    height: 235px;
+    width: 280px;
+    height: 280px;
     border-radius: 150px;
     overflow: hidden
 }
-.recipe-image{
+.recipe-img{
     /* width: 300px; */
-    height: 400px;
+    height: 280px;
     /* background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/08/Slow-Cooked-Spaghetti-Bolognese-Recipe.jpg"); */
     /* background-size: cover;
     background-position: center;
     border-radius: 150px; */
     border:none;
     /* margin: 0px 0px 25px 0px; */
+    position: relative;
+    left: -27%;
 }
 
 .recipe-ingredients{
