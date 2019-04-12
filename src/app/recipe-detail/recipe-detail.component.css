@@ -1,43 +1,60 @@
+.recipe-page{
+    width: 100vw;
+    padding-top: 30px;
+}
+
 .recipe{
-    text-align: center;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    width: 85vw;
-    margin: 100px auto auto auto;
+    width: 95vw;
+    margin: auto;
     background: #ececec;
-    padding: 0 40px 30px 40px;
     border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.recipe-detail{
+    width: 414px;
+    display: flex;
+    flex-direction: column;
 }
 
 .recipe-name{
-    font-size:40px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    /* font-size:3vw; */
+    font-size:35px;
+    margin-top: 50px;
+    /* margin-bottom: 10px; */
 }
+
+.round-image{
+    width: 235px;
+    height: 235px;
+    border-radius: 150px;
+    overflow: hidden
+}
+.recipe-image{
+    /* width: 300px; */
+    height: 400px;
+    /* background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/08/Slow-Cooked-Spaghetti-Bolognese-Recipe.jpg"); */
+    /* background-size: cover;
+    background-position: center;
+    border-radius: 150px; */
+    border:none;
+    /* margin: 0px 0px 25px 0px; */
+}
+
+.recipe-ingredients{
+    padding: 80px 20px 40px 20px;
+    text-align:center;
+    /* width: auto; */
+    width: 414px;
+}   
 
 .ingredients-card {
+    
     border-radius:10px;
     background-color: #ffffff;
-}
-
-.recipe .recipe-image{
-    width: 300px;
-    height: 300px;
-    /* background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/08/Slow-Cooked-Spaghetti-Bolognese-Recipe.jpg"); */
-    background-size: cover;
-    background-position: center;
-    border-radius: 150px;
-    border:none;
-    margin: 0px 0px 25px 0px;
-}
-
-.recipe div {
-    width: 40vw;
-    overflow: wrap;
-    /* padding-left: 40px; */
-    /* margin: auto; */
-    margin-top: 35px;
 }
 
 .recipe ul {
@@ -46,58 +63,36 @@
     flex-flow: column;
     justify-content: space-around;
     list-style-type: none;
-    padding: 10px;
+    padding: 30px 0;
+    /* margin: auto; */
+    align-self: center;
+}
+
+
+.recipe ul li {
+    line-height: 20px;
+    padding: 10px ;
     margin: auto;
 }
 
-ul {
-    align-self: center;
-    display: flex;
-    width: 30vw;
-    flex-flow: row;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 10px;
-
-}
-
-.recipe ul li {
-    line-height: 30px;
-    padding: 10px;
-    /* border-bottom: 2px dotted white; */ 
-}
-.recipe ol {
-    text-align: left;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    padding: 10px;
-    width: 280px;
-}
-
-.recipe ol li {
-    line-height: 30px;
-    padding: 10px; 
-}
 
 li > fa-icon {
-    background: #a2a2a2a1;
-    padding: 5px 8px;
+    background: #ffffff;;
+    padding: 5px 6px 3px 6px;
     border-radius: 150px;
-    width: 10px;
-    color: white;
+    /* width: 10px; */
+    color: rgb(255, 0, 0);
 }
 
 
-img {
-    padding-right: 30px;
-}
 
-.recipe h2 {
-    text-align:center;
-    /* padding-left: 10px; */
-    /* height: 45px; */
-}
+
+
+
+
+
+
+
 
 
 
