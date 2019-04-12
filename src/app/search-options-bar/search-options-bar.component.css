@@ -27,6 +27,7 @@
 input[type="checkbox" i] {
     height: unset;
     vertical-align: middle;
+    -webkit-appearance: radio;
 }
 
 .search-options {
@@ -77,6 +78,7 @@ input[type="checkbox" i] {
     width:95vw; 
     margin: auto; 
     background: white;
+    box-shadow: inset 1px 1px 4px grey;
 }
 
 
