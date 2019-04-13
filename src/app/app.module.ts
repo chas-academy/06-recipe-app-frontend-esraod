@@ -13,6 +13,7 @@ import { SearchOptionsBarComponent } from './search-options-bar/search-options-b
 import { HttpClientModule } from '@angular/common/http';
 import { SignUpComponent } from './user-assets/sign-up/sign-up.component';
 import { SignInComponent } from './user-assets/sign-in/sign-in.component';
+import { SavedComponent } from './user-assets/saved/saved.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SignInComponent } from './user-assets/sign-in/sign-in.component';
     SearchResultsComponent,
     SearchOptionsBarComponent,
     SignUpComponent,
-    SignInComponent
+    SignInComponent,
+    SavedComponent
   ],
   imports: [
     BrowserModule,
