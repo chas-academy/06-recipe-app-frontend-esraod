@@ -11,6 +11,8 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { SearchOptionsBarComponent } from './search-options-bar/search-options-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SignUpComponent } from './user-assets/sign-up/sign-up.component';
+import { SignInComponent } from './user-assets/sign-in/sign-in.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     StartpageComponent,
     RecipeDetailComponent,
     SearchResultsComponent,
-    SearchOptionsBarComponent
+    SearchOptionsBarComponent,
+    SignUpComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
