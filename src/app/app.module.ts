@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StartpageComponent } from './startpage/startpage.component';
-// import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { SearchOptionsBarComponent } from './search-options-bar/search-options-bar.component';
@@ -19,7 +18,6 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     NavbarComponent,
     StartpageComponent,
-    // RecipeComponent,
     RecipeDetailComponent,
     SearchResultsComponent,
     SearchOptionsBarComponent
@@ -29,7 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,7 @@
   width: 100vw;
   background: #ffffff63;
   z-index: 99;
+  box-shadow: 0 0 6px #e4e4e4;
 }
 
 .sign {
