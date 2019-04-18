@@ -1,3 +1,4 @@
+import { AuthenticationService } from './../services/authentication.service';
 import { Component, OnInit } from '@angular/core';
 import { faHeart, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,7 +15,9 @@ export class NavbarComponent implements OnInit {
   heart = faHeart;
   search = faSearch;
 
-  constructor() { }
+  constructor(
+    public auth: AuthenticationService,
+  ) { }
 
   ngOnInit() {
   }

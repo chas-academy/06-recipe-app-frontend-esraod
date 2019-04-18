@@ -2,12 +2,19 @@
 
   <div class="nav-1" style="width: 70vw; display:flex; flex-direction: row;">
     <ul class="sign">
-      <li routerLink="#">
+
+      <li routerLink="/register" *ngIf="!auth.isLoggedIn()" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
         Sign Up
       </li>
-      <li routerLink="#">
+      
+      <li routerLink="/login" *ngIf="!auth.isLoggedIn()" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
         Sign in
       </li>
+
+      <li (click)="auth.logout()" *ngIf="auth.isLoggedIn()" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
+        Logout
+      </li>
+
     </ul>
   </div>
 <!-- 
@@ -34,18 +41,15 @@
   </div> -->
 
   <div class="nav-3" style="width: 30vw; display:flex; flex-direction: row; justify-content: flex-end;">
-    <button class="search">
-      <!-- <input type="text" placeholder="search.."> -->
-      <fa-icon [icon]="user"></fa-icon>
-    </button>
-    <button class="search">
-      <!-- <input type="text" placeholder="search.."> -->
+    
+    <button class="search" routerLink="/saved" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
       <fa-icon [icon]="heart"></fa-icon>
     </button>
-    <button class="search">
-      <!-- <input type="text" placeholder="search.."> -->
+
+    <button class="search" routerLink="/recipes" onClick="window.scrollTo(0,document.body.scrollHeight);">
       <fa-icon [icon]="search"></fa-icon>
     </button>
+
   </div>
   
 </div>
