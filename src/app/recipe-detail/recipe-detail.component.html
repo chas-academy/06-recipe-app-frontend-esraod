@@ -2,11 +2,24 @@
 
   <div class="recipe">
 
+      <a href="/" style="
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* margin: auto; */
+      margin: 30px 0 0 0;
+      text-decoration: none;
+      color: black;
+      /* transform: rotate(45deg); */
+      font-size: 23px;
+  ">x</a>
     <div class="recipe-detail"> 
   
       <!-- <svg id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 365.33"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:20px;}</style></defs><title>Untitled-3</title><clipPath id="myCircle"><circle class="cls-1" cx="285" cy="182.67" r="172.67"/></clipPath><image width="250" height="250" xlink:href="https://media.self.com/photos/5ada18143cf6f501f02504fc/4:3/w_728,c_limit/Screen%2520Shot%25202018-04-20%2520at%252012.40.27%2520PM.png" clip-path="url(#myCircle)" /></svg>
       -->
       <ul>
+       
         <h2 class="recipe-name">
           {{recipe.name}}
         </h2>
@@ -38,9 +51,11 @@
         <li *ngIf="recipe.numberOfServings">
           Serves: {{recipe.numberOfServings}}.
         </li>
-        <li>
-          <fa-icon [icon]="heart"></fa-icon>
-        </li>
+        <span *ngIf="auth.isLoggedIn()">
+          <button *ngIf="!already" (click)="saveRecipe()">
+            <fa-icon [icon]="heart"></fa-icon>
+          </button>
+        </span>
       </ul>
     </div>
   
@@ -48,8 +63,8 @@
     <div class="recipe-ingredients">
       <h2>Ingredients</h2>
       <ul *ngIf="recipe.ingredientLines"  class="ingredients-card">
-        <li *ngFor="let line of recipe.ingredientLines;" >
-          {{line}}
+        <li *ngFor="let line of recipe.ingredientLines; let i = index" >
+          {{i + 1}}. {{line}}
         </li>
       </ul>
     </div>

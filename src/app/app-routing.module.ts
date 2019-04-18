@@ -1,3 +1,7 @@
+import { AuthGuardService } from './services/auth-guard.service';
+import { SavedComponent } from './user-assets/saved/saved.component';
+import { SignUpComponent } from './user-assets/sign-up/sign-up.component';
+import { SignInComponent } from './user-assets/sign-in/sign-in.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
@@ -19,10 +23,21 @@ const routes: Routes = [
     component: SearchResultsComponent,
   },
 
-  // {
-  //   path: 'search',
-  //   component: SearchOptionsBarComponent,
-  // },
+  {
+    path: 'login',
+    component: SignInComponent,
+  },
+
+  {
+    path: 'register',
+    component: SignUpComponent,
+  },
+
+  {
+    path: 'saved',
+    component: SavedComponent,
+
+  },
 
   {
     path: '',
