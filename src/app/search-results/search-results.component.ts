@@ -77,6 +77,8 @@ export class SearchResultsComponent implements OnInit {
       this.recipes = data
       console.log(this.recipes)
       this.recipes = this.recipes.matches
+      // setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)
+      window.scrollTo(300, 500);
     })
 
   }
