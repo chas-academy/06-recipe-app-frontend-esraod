@@ -1,103 +1,97 @@
-.recipe-page{
-    width: 100vw;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.recipe-page {
+  width: 100vw;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.recipe{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    width: 95vw;
-    margin: auto;
-    background: #ececec;
-    border-radius: 15px;
-    flex-wrap: wrap;
+.recipe {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 95vw;
+  margin: auto;
+  background: #ececec;
+  border-radius: 15px;
+  flex-wrap: wrap;
 }
 
-.recipe-detail{
-    width: 414px;
-    display: flex;
-    flex-direction: column;
+.recipe-detail {
+  width: 414px;
+  display: flex;
+  flex-direction: column;
 }
 
-.recipe-name{
-    /* font-size:3vw; */
-    font-size:35px;
-    margin-top: 50px;
-    /* margin-bottom: 10px; */
+.recipe-name {
+  font-size: 35px;
+  margin-top: 50px;
 }
 
-.round-image{
-    width: 280px;
-    height: 280px;
-    border-radius: 150px;
-    overflow: hidden
+.round-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 150px;
+  overflow: hidden;
 }
-.recipe-img{
-    /* width: 300px; */
-    height: 280px;
-    /* background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/08/Slow-Cooked-Spaghetti-Bolognese-Recipe.jpg"); */
-    /* background-size: cover;
+
+.recipe-img {
+  /* width: 300px; */
+  height: 280px;
+  /* background-image: url("https://www.cookbakeeat.com/wp-content/uploads/2015/08/Slow-Cooked-Spaghetti-Bolognese-Recipe.jpg"); */
+  /* background-size: cover;
     background-position: center;
     border-radius: 150px; */
-    border:none;
-    /* margin: 0px 0px 25px 0px; */
-    position: relative;
-    left: -27%;
+  border: none;
+  /* margin: 0px 0px 25px 0px; */
+  position: relative;
+  left: -27%;
 }
 
-.recipe-ingredients{
-    padding: 80px 20px 40px 20px;
-    text-align:center;
-    /* width: auto; */
-    width: 414px;
-}   
+.recipe-ingredients {
+  padding: 80px 20px 40px 20px;
+  text-align: center;
+  /* width: auto; */
+  width: 414px;
+}
 
 .ingredients-card {
-    
-    border-radius:10px;
-    background-color: #ffffff;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .recipe ul {
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 30px 0;
-    /* margin: auto; */
-    align-self: center;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 30px 0;
+  /* margin: auto; */
+  align-self: center;
 }
-
 
 .recipe ul li {
-    line-height: 20px;
-    padding: 10px ;
-    margin: auto;
+  line-height: 20px;
+  padding: 10px;
+  margin: auto;
 }
-
 
 li > fa-icon {
-    background: #ffffff;;
-    padding: 5px 6px 3px 6px;
-    border-radius: 150px;
-    /* width: 10px; */
-    color: rgb(255, 0, 0);
+  background: #ffffff;
+  padding: 5px 6px 3px 6px;
+  border-radius: 150px;
+  /* width: 10px; */
+  color: rgb(255, 0, 0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.goback {
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: auto; */
+  margin: 30px 0 0 0;
+  text-decoration: none;
+  color: black;
+  /* transform: rotate(45deg); */
+  font-size: 23px;
+}

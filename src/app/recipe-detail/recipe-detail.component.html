@@ -1,28 +1,17 @@
 <div class="recipe-page" *ngIf="recipe">
-
   <div class="recipe">
 
-      <a href="/" style="
-      height: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      /* margin: auto; */
-      margin: 30px 0 0 0;
-      text-decoration: none;
-      color: black;
-      /* transform: rotate(45deg); */
-      font-size: 23px;
-  ">x</a>
-    <div class="recipe-detail"> 
-  
-      <!-- <svg id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 365.33"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:20px;}</style></defs><title>Untitled-3</title><clipPath id="myCircle"><circle class="cls-1" cx="285" cy="182.67" r="172.67"/></clipPath><image width="250" height="250" xlink:href="https://media.self.com/photos/5ada18143cf6f501f02504fc/4:3/w_728,c_limit/Screen%2520Shot%25202018-04-20%2520at%252012.40.27%2520PM.png" clip-path="url(#myCircle)" /></svg>
-      -->
+    <a href="/" class="goback">
+      x
+    </a>
+
+    <div class="recipe-detail">
       <ul>
-       
+
         <h2 class="recipe-name">
-          {{recipe.name}}
+          {{ recipe.name }}
         </h2>
+
         <li *ngIf="recipe.source.sourceDisplayName">
           <i>
             <a style="color: gray;
@@ -39,51 +28,41 @@
             <img class="recipe-img" src="{{recipe.images[0].hostedLargeUrl}}">
           </div>
         </li>
+
         <li *ngIf="recipe.prepTime">
-          Preperation: {{recipe.prepTime}}
+          <b>Preperation:</b> {{ recipe.prepTime }}
         </li>
+
         <li *ngIf="recipe.cookTime">
-            Cooking: {{recipe.cookTime}}
+          <b>Cooking:</b> {{ recipe.cookTime }}
         </li>
+
         <li *ngIf="recipe.totalTime">
-          Total time: {{recipe.totalTime}}
+          <b>Total time:</b> {{ recipe.totalTime }}
         </li>
+
         <li *ngIf="recipe.numberOfServings">
-          Serves: {{recipe.numberOfServings}}.
+          <b>Serves:</b> {{ recipe.numberOfServings }}
         </li>
+
         <span *ngIf="auth.isLoggedIn()">
           <button *ngIf="!already" (click)="saveRecipe()">
             <fa-icon [icon]="heart"></fa-icon>
           </button>
         </span>
+
       </ul>
     </div>
-  
 
     <div class="recipe-ingredients">
       <h2>Ingredients</h2>
-      <ul *ngIf="recipe.ingredientLines"  class="ingredients-card">
-        <li *ngFor="let line of recipe.ingredientLines; let i = index" >
-          {{i + 1}}. {{line}}
+      <ul *ngIf="recipe.ingredientLines" class="ingredients-card">
+        <li *ngFor="let line of recipe.ingredientLines; let i = index">
+          <!-- <b>{{i + 1}}.</b>  -->
+          {{ line }}
         </li>
       </ul>
     </div>
-  
-    <!--
-    <div>
-      <h2>How to:</h2>
-      <ol>
-        <li> 400 gram köttfärs.</li>
-        <li>400 gram tomater, hela, konserverade.</li>
-        <li>1 tärning(ar) köttbuljong.</li>
-        <li>2 msk tomatpuré</li>
-        <li>1 st lagerblad.</li>
-        <li>1 tsk oregano.</li>
-        <li>300 gram spaghetti.</li>
-        <li>1 st svartpeppar, malen.</li>
-      </ol>
-    </div> 
-    -->
 
-  </div>
+  </div> 
 </div>
