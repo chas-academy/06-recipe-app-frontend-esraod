@@ -1,54 +1,68 @@
-.sign-up{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.sign-up {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.forms{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
+.forms,
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.forms  {
-    width: 60vw;
-    height: 80px;
-    margin: auto;
- 
+.forms {
+  width: 60vw;
+  height: 220px;
+  margin: auto;
 }
 
-.forms > input {
-    margin: 15px 0;
-    padding: 10px 0;
-    text-indent: 15px;
-    border-radius: 15px;
-    border: none;
-    box-shadow: 1px 1px 4px #aaaaaa;
+.forms > form > input {
+  margin: 15px 0;
+  padding: 10px 0;
+  text-indent: 15px;
+  border-radius: 15px;
+  border: 0.1px solid #aaaaaa;
+  box-shadow: inset 1px 1px 4px #aaaaaa;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid transparent;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 button {
-    font-size: 12px;
-    width: 100px;
-    color: white;
-    background: lightsalmon;
-    border: none;
-    padding: 4px 0;
-    border-radius: 20px;
-    /* margin: 0 0 0 auto; */
-    box-shadow: 0 0 2px gray;
+  font-size: 12px;
+  width: 100px;
+  color: white;
+  background: lightsalmon;
+  border: none;
+  padding: 4px 0;
+  border-radius: 20px;
+  margin: 0 0 0 auto;
+  box-shadow: 0 0 2px gray;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
 label {
-    font-size: 12px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 120px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 120px;
 }

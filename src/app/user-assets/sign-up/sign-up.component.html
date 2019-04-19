@@ -1,12 +1,10 @@
 <div class="sign-up">
   <div class="forms">
-    <h1>Sign Up</h1>
-    
     <form [formGroup]="registerForm" (ngSubmit)="createAccount()">
-      <!-- <input placeholder="Name..." type="text"> -->
+      <h1>Sign Up</h1>
+
       <input placeholder="E-mail..." type="text" formControlName="email">
       <input placeholder="Password..." type="password" formControlName="password">
-      <!-- <input placeholder="Comfirm Password..." type="text"> -->
       <button>Sign Up</button>
     </form>
   </div>
