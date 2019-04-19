@@ -34,6 +34,7 @@ export class RecipeDetailComponent implements OnInit {
     this.recipeService.getRecipe(this.id).subscribe(data => {
       this.recipe = data
       console.log(this.recipe)
+      setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)
     })
 
   }
