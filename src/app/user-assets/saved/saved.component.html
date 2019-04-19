@@ -2,19 +2,12 @@
   <h2>Saved Recipes</h2>
 
   <div class="list">
-
     <span *ngIf="recipes">
-      <span *ngFor="let recipe of recipes" >
+      <span *ngFor="let recipe of recipes">
         <a routerLink="/recipe/{{ recipe.id }}">
           <div class="item">
-            <div
-              style="
-              height: 70px;
-              width: 70px;
-              border-radius: 70px;
-              overflow: hidden;"
-            >
-              <img src="{{recipe.images[0].hostedLargeUrl}}"/>
+            <div class="savedimg">
+              <img src="{{ recipe.images[0].hostedLargeUrl }}" />
             </div>
             <div class="item-center name">
               {{ recipe.name }}
@@ -25,8 +18,8 @@
           </div>
         </a>
         <div class="item-center" (click)="unsaveRecipe(recipe.id)" onclick="setTimeout(function(){location.reload();}, 1000)">
-            ✖
-          </div>
+          ✖
+        </div>
       </span>
     </span>
 
@@ -49,8 +42,5 @@
         </div>
       </div>
     </a> -->
-
-
   </div>
-
 </div>
