@@ -1,7 +1,5 @@
 .nav {
-  /* background: #eeeeee; */
   margin-bottom: 60px;
-  /* justify-content: center; */
   justify-content: space-between;
   display: flex;
   position: fixed;
@@ -11,26 +9,23 @@
   box-shadow: 0 0 6px #e4e4e4;
 }
 
+.nav-1 {
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+}
+
 .sign {
   font-weight: 100;
   color: #e2e2e2;
   letter-spacing: 1px;
 }
 
-li fa-icon {
-  background: #a2a2a2a1;
-  padding: 5px 8px;
-  border-radius: 150px;
-  width: 40px;
-  color: white;
-}
-
-li fa-icon:hover {
-  background: #454545;
-}
-
-fa-icon:hover {
-  color: #4b4b4b;
+.nav-3 {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .search {
@@ -45,40 +40,35 @@ fa-icon:hover {
   float: right;
 }
 
+li fa-icon {
+  background: #a2a2a2a1;
+  padding: 5px 8px;
+  border-radius: 150px;
+  width: 40px;
+  color: white;
+}
+
+fa-icon:hover {
+  color: #4b4b4b;
+}
+
 ul {
   align-self: center;
   display: flex;
-  width: 33vw;
+  width: 43vw;
   flex-flow: row;
   justify-content: space-around;
   list-style-type: none;
   padding: 10px;
 }
-.navigation {
-  width: 33vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 .nav li {
   font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: lowercase;
-  font-size: 16px;
-}
-
-input {
-  border-radius: 100px;
-  /* border: 2px solid black; */
-  border: none;
-  background: #e2e2e2;
-  text-indent: 10px;
-  height: 30px;
-  /* margin-top: 3px; */
-  margin-right: 2px;
-  width: 160px;
+  font-size: 15.5px;
 }
 
 .nav li:hover {
-  color: gray;
+  color: #4b4b4b;
 }

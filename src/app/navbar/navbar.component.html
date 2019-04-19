@@ -1,6 +1,5 @@
 <div class="nav">
-
-  <div class="nav-1" style="width: 70vw; display:flex; flex-direction: row;">
+  <div class="nav-1">
     <ul class="sign">
 
       <li routerLink="/register" *ngIf="!auth.isLoggedIn()" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
@@ -14,34 +13,10 @@
       <li (click)="auth.logout()" *ngIf="auth.isLoggedIn()" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
         Logout
       </li>
-
     </ul>
   </div>
-<!-- 
-  <div class="nav-2">
-    <ul class="navigation"> -->
-      <!-- <li routerLink="#">
-        <fa-icon [icon]="home"></fa-icon>
-      </li> -->
-      <!-- <li routerLink="#">
-        <fa-icon [icon]="book"></fa-icon>
-      </li> -->
-      <!-- <li  routerLink="#">
-        <fa-icon [icon]="user"></fa-icon>
-      </li>
-      <li  routerLink="#">
-        <fa-icon [icon]="list"></fa-icon>
-      </li> -->
-      <!-- <li routerLink="#">
-        <fa-icon [icon]="heart"></fa-icon>
-      </li>
-      
-    </ul>
- 
-  </div> -->
 
-  <div class="nav-3" style="width: 30vw; display:flex; flex-direction: row; justify-content: flex-end;">
-    
+  <div class="nav-3">
     <button class="search" routerLink="/saved" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
       <fa-icon [icon]="heart"></fa-icon>
     </button>
@@ -49,7 +24,5 @@
     <button class="search" routerLink="/recipes" onClick="window.scrollTo(0,document.body.scrollHeight);">
       <fa-icon [icon]="search"></fa-icon>
     </button>
-
   </div>
-  
 </div>
