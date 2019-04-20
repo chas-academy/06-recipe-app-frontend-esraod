@@ -95,3 +95,9 @@ li > fa-icon {
   /* transform: rotate(45deg); */
   font-size: 23px;
 }
+
+.save {
+  background: none;
+  border: none;
+  color: red;
+}

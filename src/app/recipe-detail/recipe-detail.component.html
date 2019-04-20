@@ -46,7 +46,7 @@
         </li>
 
         <span *ngIf="auth.isLoggedIn()">
-          <button *ngIf="!already" (click)="saveRecipe()">
+          <button *ngIf="!already" (click)="saveRecipe()" class="save">
             <fa-icon [icon]="heart"></fa-icon>
           </button>
         </span>
