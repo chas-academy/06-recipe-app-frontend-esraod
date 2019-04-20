@@ -4,8 +4,9 @@
   <div class="list">
     <span *ngIf="recipes">
       <span *ngFor="let recipe of recipes">
-        <a routerLink="/recipe/{{ recipe.id }}">
-          <div class="item">
+     
+        <div class="item">
+          <a routerLink="/recipe/{{ recipe.id }}" class="item">
             <div class="savedimg">
               <img src="{{ recipe.images[0].hostedLargeUrl }}" />
             </div>
@@ -15,32 +16,14 @@
             <!-- <div class="item-center" (click)="unsaveRecipe(recipe.id)">
               ✖
             </div> -->
+          </a>
+          <div class="item-center" (click)="unsaveRecipe(recipe.id)" onclick="setTimeout(function(){location.reload();}, 1000)">
+            ✖
           </div>
-        </a>
-        <div class="item-center" (click)="unsaveRecipe(recipe.id)" onclick="setTimeout(function(){location.reload();}, 1000)">
-          ✖
         </div>
+       
       </span>
     </span>
-
-    <!-- <a href="/recipe/My-save-Brownies-1855830">
-      <div class="item">
-        <div
-          style="
-          height: 70px;
-          width: 70px;
-          border-radius: 70px;
-          overflow: hidden;"
-        >
-          <img src="https://lh3.googleusercontent.com/Wuq7ItqB4WRLAs4VuYE5L35KJulcY8-QWmcKKKt7yXhy8bP8wgeMmBksg8SOUHF6tnUu-Rt-DoF93O4VJ548bv8=s360"/>
-        </div>
-        <div class="item-center name">
-          Fish Florentine
-        </div>
-        <div class="item-center">
-          ✖
-        </div>
-      </div>
-    </a> -->
   </div>
+  
 </div>
