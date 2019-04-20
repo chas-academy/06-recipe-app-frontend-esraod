@@ -17,7 +17,11 @@
   </div>
 
   <div class="nav-3">
-    <button class="search" routerLink="/saved" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
+    <button *ngIf="auth.isLoggedIn()" class="search" routerLink="/saved" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
+      <fa-icon [icon]="heart"></fa-icon>
+    </button>
+
+    <button *ngIf="!auth.isLoggedIn()" class="search" routerLink="/login" onClick="setTimeout(function(){window.scrollTo(0,document.body.scrollHeight);}, 500)">
       <fa-icon [icon]="heart"></fa-icon>
     </button>
 
