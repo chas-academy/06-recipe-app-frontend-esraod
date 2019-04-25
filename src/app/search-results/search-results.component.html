@@ -67,7 +67,7 @@
 </div>
 
 <div *ngIf="recipes" class="s-result">
-  <a *ngFor="let recipe of recipes.reverse()" routerLink="/recipe/{{ recipe.id }}">
+  <a *ngFor="let recipe of recipes" routerLink="/recipe/{{ recipe.id }}">
     <div class="result">
       <!-- <div class="result-img" style="background-image: url('{{recipe.smallImageUrls[0]}}') !important;"></div> -->
       <div class="round-image">

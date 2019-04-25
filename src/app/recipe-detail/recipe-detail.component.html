@@ -1,9 +1,9 @@
 <div class="recipe-page" *ngIf="recipe">
   <div class="recipe">
 
-    <a href="/" class="goback">
+    <!-- <a href="/" class="goback">
       x
-    </a>
+    </a> -->
 
     <div class="recipe-detail">
       <ul>
@@ -47,7 +47,7 @@
 
         <span *ngIf="auth.isLoggedIn()">
           <button *ngIf="!already" (click)="saveRecipe()" class="save">
-            <fa-icon [icon]="heart"></fa-icon>
+            <fa-icon style="font-size: 16px;" [icon]="heart"></fa-icon>
           </button>
         </span>
 

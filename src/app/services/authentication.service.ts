@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AuthenticationService {
   private token: string
 
-  apiURL = 'http://recipe.test/api'
+  apiURL = 'http://yoi.eoktav.me/api'
 
   constructor(
     private http: HttpClient, 
